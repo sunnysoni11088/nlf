@@ -688,7 +688,9 @@
             toggler.classList.remove('collapsed');
         });
     });
-
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
 </script>
 </body>
 </html>
