@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
-
     <title>Bootstrap 5 </title>
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg fixed-top">
+<nav class="navbar navbar-expand-md fixed-top">
     <div class="container">
         <a class="navbar-brand font-80" href="/">L<span>N</span>F</a>
         <!--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">-->
@@ -23,7 +22,7 @@
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-<!--            <span class="navbar-toggler-text">Menu</span>-->
+            <span class="navbar-toggler-text d-none">Menu</span>
             <span class="navbar-toggler-icon">
         <span class="line line1"></span>
         <span class="line line2"></span>
@@ -54,21 +53,31 @@
                         <span class="nav-front">Team</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactus">
+                        <span class="nav-front">Contact us</span>
+                    </a>
+                </li>
             </ul>
-
-            <div class="d-flex align-items-center quick-contact">
-                <a href="#contact" class="contact-us btn-orange">Contact us </a>
-            </div>
         </div>
+        <div class="d-flex align-items-center quick-contact">
+            <a href="#contact" class="contact-us btn-orange">+91 9898989898 </a>
+        </div>
+
     </div>
 </nav>
 
 <!-- section start -->
-<section class="section-hero">
+<section class="section-hero" id="home">
+    <video autoplay muted loop playsinline id="video-background">
+        <source src="./img/hero-video.mp4" type="video/mp4">
+    </video>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+
                 <div class="hero-main">
+
                         <h1 class="heading-h1 text-white">Elasticity in Fashion and Sustainability</h1>
                         <p class="heading-subtitle font-32 text-white">Stretching the Boundaries of Style with Sustainability in Mind</p>
                         <a href="#contact" class="contact-us btn-orange text-white">Download Brochure</a>
@@ -79,9 +88,8 @@
 </section>
 <!-- section end -->
 
-
 <!-- section about start -->
-<section class="section-about ptb-100">
+<section class="section-about ptb-100" id="about">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -92,10 +100,13 @@
             </div>
         </div>
         <div class="row justify-content-between">
-            <div class="col-md-7">
+            <div class="col-12 col-lg-7">
                 <div class="about-left">
                     <h2 class="heading-h3 text-gray">Top-notch yarn from the
                         world’s best suppliers</h2>
+                    <div class="product-pic mt-4 pt-2 d-sm-none">
+                        <img src="img/product/woven-elastic.jpg" loading="lazy" width="654" height="490" class="img-fluid w-100" alt="Product">
+                    </div>
                     <p class="font-18 text-gray">Established in 2012, LMN specializes in the production of woven fabrics and textile accessories, based in Oakville, with a dedicated focus on continuous innovation in manufacturing technologies. Over the years, and extensive industry knowledge in meeting customer requirements.</p>
                 </div>
 
@@ -139,7 +150,7 @@
                 </div>
 
             </div>
-            <div class="col-md-4">
+            <div class="col-12 col-lg-4 d-none d-sm-block">
                 <div class="about-video">
                     <img src="img/about-us.png" loading="lazy" width="837" height="1068" class="img-fluid w-100" alt="About us">
                     <div class="play-icon">
@@ -152,9 +163,8 @@
 </section>
 <!-- section about end -->
 
-
 <!-- section products start -->
-<section class="section-products ptb-100 bg-light-white">
+<section class="section-products ptb-100 bg-light-white" id="products">
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-md-6">
@@ -187,7 +197,7 @@
                                 <div class="grid-item">
                                     <div class="product-inner">
                                         <div class="product-pic">
-                                            <img src="img/product/tape-one.png" loading="lazy" width="738" height="521" class="img-fluid w-100" alt="Product">
+                                            <img src="img/product/other.png" loading="lazy" width="738" height="521" class="img-fluid w-100" alt="Product">
                                         </div>
                                         <div class="product-details">
                                             <span class="name">Jacquard Elastic</span>
@@ -198,7 +208,7 @@
                                 <div class="grid-item">
                                     <div class="product-inner">
                                         <div class="product-pic">
-                                            <img src="img/product/tape-two.png" loading="lazy" width="738" height="521" class="img-fluid w-100" alt="Product">
+                                            <img src="img/product/woven-elastic.jpg" loading="lazy" width="738" height="521" class="img-fluid w-100" alt="Product">
                                         </div>
                                         <div class="product-details">
                                             <span class="name">Jacquard Elastic</span>
@@ -209,7 +219,7 @@
                                 <div class="grid-item">
                                     <div class="product-inner">
                                         <div class="product-pic">
-                                            <img src="img/product/tape-three.png" loading="lazy" width="738" height="521" class="img-fluid w-100" alt="Product">
+                                            <img src="img/product/jacquard-elastic.jpg" loading="lazy" width="738" height="521" class="img-fluid w-100" alt="Product">
                                         </div>
                                         <div class="product-details">
                                             <span class="name">Jacquard Elastic</span>
@@ -312,7 +322,6 @@
 </section>
 <!-- section products end -->
 
-
 <!-- section trends start -->
 <section class="section-trends ptb-100">
     <div class="container">
@@ -338,10 +347,8 @@
 </section>
 <!-- section trends end -->
 
-
-
 <!-- section team start -->
-<section class="section-team ptb-100">
+<section class="section-team ptb-100" id="team">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -467,24 +474,10 @@
 <!-- section testimonial end -->
 
 <!-- section start -->
-<section class="section-">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="">
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- section end -->
-
-<!-- section start -->
-<section class="section-footer">
+<section class="section-footer" id="contactus">
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-md-5 order-md-2">
+            <div class="col-md-6 col-lg-5 order-md-2">
                 <div class="inquiry-form">
                     <h3 class="font-32 text-white mb-3">Get In Touch</h3>
                     <form>
@@ -522,7 +515,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-6 order-md-1">
+            <div class="col-md-6 col-lg-6 order-md-1">
                 <div class="footer-details">
                     <div class="footer-main">
                         <div class="footer-logo">
@@ -530,6 +523,7 @@
                         </div>
                         <p class="font-18 text-white">Established in 2012, LMN specializes in the production of woven fabrics and textile accessories, based in Oakville, with a dedicated focus on continuous innovation in manufacturing technologies.</p>
                     </div>
+
                     <div class="company-address">
                         <div class="address-grids">
                             <div class="inner-address">
@@ -556,10 +550,18 @@
                                     <li><a href="tel:+919898989898">Contact us</a></li>
                                 </ul>
                             </div>
+                            <div class="inner-address d-lg-none">
+                                <h5 class="font-22 text-white">Follow us</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="">Facebook</a></li>
+                                    <li><a href="">Instagram</a></li>
+                                    <li><a href="">Linkedin</a></li>
+                                </ul>
+                            </div>
                         </div>
 
                     </div>
-                    <div class="social-media">
+                    <div class="social-media d-none d-lg-block">
                         <ul class="list-unstyled">
                             <li><a href="">Facebook</a></li>
                             <li><a href="">Instagram</a></li>
@@ -585,6 +587,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -605,6 +608,11 @@
             slidesPerView: 3,
             paginationClickable: true,
             spaceBetween: 20,
+            speed: 3000,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
             breakpoints: {
                 1920: {
                     slidesPerView: 4,
@@ -614,7 +622,7 @@
                     slidesPerView: 2,
                     spaceBetween: 30
                 },
-                480: {
+                575: {
                     slidesPerView: 1.2,
                     spaceBetween: 10
                 }
@@ -628,6 +636,11 @@
             slidesPerView: 2,
             paginationClickable: true,
             spaceBetween: 20,
+            speed: 3000,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
             breakpoints: {
                 1920: {
                     slidesPerView: 2,
@@ -637,7 +650,7 @@
                     slidesPerView: 2,
                     spaceBetween: 30
                 },
-                480: {
+                575: {
                     slidesPerView: 1.2,
                     spaceBetween: 10
                 }
@@ -661,6 +674,20 @@
 
     // Add scroll event listener to window
     window.addEventListener('scroll', toggleNavbar);
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggler = document.querySelector('.navbar-toggler');
+        const navbarScroll = document.querySelector('#navbarScroll');
+
+        toggler.addEventListener('click', function () {
+            toggler.classList.toggle('collapsed');
+        });
+
+        navbarScroll.addEventListener('hidden.bs.collapse', function () {
+            toggler.classList.remove('collapsed');
+        });
+    });
 
 </script>
 </body>
